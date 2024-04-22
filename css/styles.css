@@ -1,0 +1,19 @@
+:root {
+  --primary-background-color: hsl(185, 75%, 39%);
+  --primary-font-color: hsl(229, 23%, 23%);
+  --secondary-font-color: hsl(227, 10%, 46%);
+  --primary-font-size: 1.8rem;
+  --secondary-font-size: 1.4rem;
+}
+
+.kumbh-sans-primary-font-family {
+  font-family: "Kumbh Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-variation-settings: "YOPQ" 300;
+}
+
+.kumbh-sans-primary-font-family--bold {
+  font-weight: 700;
+}
