@@ -7,6 +7,7 @@
   --small-font-size: 1.2rem;
 }
 
+/* Font family */
 .kumbh-sans-primary-font-family {
   font-family: "Kumbh Sans", sans-serif;
   font-optical-sizing: auto;
@@ -20,12 +21,12 @@
 }
 
 body {
-  background-color: var(--primary-background-color);
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  background-color: var(--primary-background-color);
 }
 
 .bg-image {
@@ -44,13 +45,21 @@ body {
 }
 
 .card {
-  width: 90%;
-  max-width: 375px;
-  background-color: #fff;
-  border-radius: 14px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 14px;
+  width: 90%;
+  max-width: 375px;
+  background-color: #fff;
+}
+
+.card__header {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 70px;
+  width: 100%;
 }
 
 .card__banner {
@@ -58,33 +67,25 @@ body {
   width: 100%;
 }
 
-.card__header {
-  width: 100%;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 70px;
-}
-
 .card__profile-image {
-  border-radius: 50%;
-  border: 4px solid #fff;
   position: absolute;
-  top: 65%;
+  top: 65.4%;
+  border-radius: 50%;
+  border: 6px solid #fff;
 }
 
 .card__body {
-  width: 100%;
-  text-align: center;
-  line-height: 2;
-  font-size: var(--large-font-size);
-  border-bottom: 1px solid hsl(0, 2%, 83%);
+  border-bottom: 1px solid #d5d3d3;
   padding-bottom: 24px;
+  text-align: center;
+  font-size: var(--large-font-size);
+  line-height: 2;
+  width: 100%;
 }
 
 .card__profile-name {
   margin-right: 4px;
-  color: #000000;
+  color: var(--primary-font-color);
 }
 
 .card__profile-country {
@@ -98,11 +99,16 @@ body {
 
 .card__footer {
   display: flex;
-  width: 100%;
   justify-content: space-evenly;
   text-align: center;
   margin: 24px 0;
   font-size: var(--large-font-size);
+  width: 100%;
+}
+
+.card__engagement-count {
+  margin-bottom: 4px;
+  color: var(--primary-font-color);
 }
 
 .card__engagement-text {
@@ -118,12 +124,6 @@ body {
   text-align: center;
 }
 
-.attribution a {
+.attribution__link {
   color: hsl(228, 45%, 44%);
-}
-
-@media (width >= 1440px) {
-  .bg-image__bottom {
-    left: 60vw;
-  }
 }
