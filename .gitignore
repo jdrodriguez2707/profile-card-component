@@ -17,6 +17,6 @@
 .prettierignore
 .vscode
 /design
-/images
 style-guide.md
 README.md
+*.Identifier
